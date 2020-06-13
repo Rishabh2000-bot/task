@@ -211,7 +211,7 @@ output  "my_cloudfront_domain" {
 	value =aws_cloudfront_distribution.s3_distribution.domain_name
 }
 
-/*
+
 resource "null_resource" "nulllocal2"{
 depends_on=[
 null_resource.nullremote1
@@ -219,5 +219,5 @@ null_resource.nullremote1
 provisioner "local-exec"{
 command = "chrome  $(aws_instance.myinstance.public_ip)"
 }
-}*/
+}
 
